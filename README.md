@@ -11,23 +11,7 @@ Features
 
 Project Structure:
 
-music-webpage/
-├── index.html          # Main HTML file for the webpage
-├── styles.css          # CSS file for styling the webpage
-├── script.js           # JavaScript file for audio player functionality
-├── images/             # Folder containing images
-│   ├── 1583151.webp
-│   ├── minimalist-parking-lot-in-pastel-colors-3is6l3p2tumdwhm0.jpg
-│   ├── video-play-button-icon-for-graphic-design-logo-web-site-social-media-mobile-app-ui-illustration-png.webp
-│   ├── kisspng-graphic-design-food-pause-button-5acc10a116bd16.8036438015233230410932.jpg
-│   └── next-button.png
-├── musics/             # Folder containing audio files
-│   ├── Ribs.mp3
-│   ├── The 1975 - About You (Official).mp3
-│   ├── The 1975 - Happiness (Official Video).mp3
-│   └── The 1975 - Robbers.mp3
-├── README.md           # This file
-
+![image](https://github.com/user-attachments/assets/9c198dcd-125c-4221-8ce8-2b86f398c2b6)
 
 Setup
 
