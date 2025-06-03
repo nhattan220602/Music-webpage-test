@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/minimalist-parking-lot-in-pastel-colors-3is6l3p2tumdwhm0.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.nav-bar {
+    width: 80%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 200px;
+    height: 60px;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-out, opacity 0.3s;
+    margin-top: 50px;
+}
+
+.logo:hover {
+    transform: scale(1.25);
+    opacity: 0.8;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s;
+    margin-top: 50px;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #5f5f5f;
+    transition: width 0.3s, left 0.3s, transform 0.3s ease-out;
+    position: absolute;
+    border-radius: 100px;
+    left: 50%;
+    bottom: -4px;
+    transform: translateX(-50%);
+}
+
+nav ul li a:hover {
+    transform: scale(1.25);
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left-col {
+    margin-left: 6%;
+}
+
+.left-col h1 {
+    font-size: 100px;
+    color: #000000;
+    line-height: 110px;
+    float: left;
+}
+
+.right-col {
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+    margin-top: 5%;
+    gap: 15px;
+}
+
+#icon {
+    width: 80px;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-out, opacity 0.3s;
+}
+
+#icon:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+#nextButton {
+    width: 89px;
+    height: 90px;
+    background: url('images/7604747.png') no-repeat center;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-out, opacity 0.3s;
+}
+
+#nextButton:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+    right: 11%;
+    display: flex;
+    align-items: center;
+}
+
+.volume-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.volume-control label {
+    font-size: 14px;
+    color: #000000;
+    font-weight: 500;
+}
+
+#volumeSlider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 140px;
+    height: 8px;
+    background: linear-gradient(to right, #5f5f5f 0%, #5f5f5f 100%, #ddd 100%);
+    border-radius: 4px;
+    outline: none;
+    transition: background 0.3s;
+    position: relative;
+}
+
+#volumeSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #2c2c2c;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background 0.3s;
+}
+
+#volumeSlider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #2c2c2c;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background 0.3s;
+}
+
+#volumeSlider:hover::-webkit-slider-thumb {
+    background: #1a1a1a;
+    transform: scale(1.15);
+}
+
+#volumeSlider:hover::-moz-range-thumb {
+    background: #1a1a1a;
+    transform: scale(1.15);
+}
+
+#volumeSlider:focus {
+    background: linear-gradient(to right, #4a4a4a 0%, #4a4a4a 100%, #ddd 100%);
+}
+
+#volumeSlider::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, #5f5f5f calc(var(--value) * 100%), #ddd 0%);
+}
+
+#volumeSlider::-moz-range-track {
+    background: linear-gradient(to right, #5f5f5f calc(var(--value) * 100%), #ddd 0%);
+}
+
+.volume-control::after {
+    content: attr(data-volume) '%';
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2c2c2c;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+
+.volume-control:hover::after {
+    opacity: 1;
+}

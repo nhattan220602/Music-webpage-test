@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Music Webpage - Test</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav-bar">
+            <img src="images/1583151.webp" alt="image2" class="logo">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SPECIFICATIONS</a></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="#">CONNECT</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <div class="left-col">
+            <h1>THE <br>REAL</br> SOUND</h1>
+        </div>
+        <div class="right-col">
+            <img src="images/video-play-button-icon-for-graphic-design-logo-web-site-social-media-mobile-app-ui-illustration-png.webp" alt="image3" id="icon">
+            <button id="nextButton" title="Next Song"></button>
+        </div>
+    </div>
+
+    <div class="controls">
+        <div class="volume-control">
+            <label for="volumeSlider"></label>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1">
+        </div>
+    </div>
+
+    <audio id="mySong">
+        <source src="musics/Ribs.mp3" type="audio/mp3">
+        <source src="musics/The 1975 - About You (Official).mp3" type="audio/mp3">
+        <source src="musics/The 1975 - Happiness (Official Video).mp3" type="audio/mp3">
+        <source src="musics/The 1975 - Robbers.mp3" type="audio/mp3">
+    </audio>
+    <script src="script.js"></script>
+</body>
+</html>
