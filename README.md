@@ -5,9 +5,9 @@ A simple, responsive music player webpage built with HTML, CSS, and JavaScript. 
 Features
 - Play/Pause Functionality: Toggle between playing and pausing the current song using a play/pause icon.
 - Next Song Button: Switch to the next song in the playlist, cycling back to the first song after the last one.
--Volume Control: Adjust the audio volume with a styled slider that displays the volume percentage on hover.
--Responsive Design: Adapts to different screen sizes with a centered layout and background image.
--Hover Effects: Interactive hover effects on the navigation links, logo, play/pause button, next button, and volume slider.
+- Volume Control: Adjust the audio volume with a styled slider that displays the volume percentage on hover.
+- Responsive Design: Adapts to different screen sizes with a centered layout and background image.
+- Hover Effects: Interactive hover effects on the navigation links, logo, play/pause button, next button, and volume slider.
 
 Project Structure:
 
